@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmFinalOrderActivity">
+    
+    <TextView
+        android:id="@+id/txt"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Please confirm your shipment details"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/shipment_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your Name"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/shipment_Phone_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipment_Name"
+        android:inputType="number"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your Phone Number"/>
+
+    <EditText
+        android:id="@+id/shipment_Adrress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipment_Phone_Number"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your Shipment Address"
+        android:imeOptions="actionNext"
+        android:inputType="textPostalAddress"/>
+
+    <EditText
+        android:id="@+id/shipment_City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipment_Adrress"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your City, Country Name"
+        android:inputType="textPostalAddress"
+        android:imeOptions="actionDone"/>
+
+
+    <ImageView
+        android:id="@+id/select_Document_ImgView"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/upload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/shipment_City"/>
+    <TextView
+        android:id="@+id/InfoTxt_Docs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:text="* Select Your Id Proof(Aadhar card, Pan card etc)"
+        android:layout_below="@+id/select_Document_ImgView"/>
+
+
+
+
+        <Button
+            android:id="@+id/confirm_final_order_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/InfoTxt_Docs"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="25dp"
+            android:text="Check Out"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>

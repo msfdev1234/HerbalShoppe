@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisclaimerActivity">
+
+    <RelativeLayout
+        android:id="@+id/realative_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/back_Arrow"
+            android:layout_width="50dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/back_icon"
+            android:layout_centerVertical="true"
+            android:foregroundGravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/back_Arrow"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Disclaimer"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/alert_Sign"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/realative_header"
+        android:src="@drawable/risk_sign"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/alert_Sign1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/realative_header"
+        android:src="@drawable/risk_sign"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/realative_header"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/alert_Sign1"
+        android:layout_toRightOf="@id/alert_Sign"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Order at your own risk"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/alert_Sign"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp">
+
+        <ImageView
+            android:id="@+id/check_sign"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/right_sign" />
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:gravity="start"
+            android:text="Only order on pharmaceutical prescription"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp">
+
+
+        <ImageView
+            android:id="@+id/check_sign1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/right_sign" />
+
+        <TextView
+            android:id="@+id/p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:gravity="start"
+            android:text="We sell all ayurvedic , unani herbal items raw material and packaged"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp">
+
+
+        <ImageView
+            android:id="@+id/check_sign2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/right_sign" />
+
+        <TextView
+            android:id="@+id/p3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="start"
+            android:text="Our products raw material is bought from different countries icnludes Africa, Iran, USA, and Indian"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp">
+
+        <ImageView
+            android:id="@+id/check_sign3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/right_sign" />
+
+        <TextView
+            android:id="@+id/p4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:gravity="start"
+            android:text="Each product is made under high observation and professionals"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp">
+
+
+        <ImageView
+            android:id="@+id/check_sign4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/right_sign" />
+
+        <TextView
+            android:id="@+id/p5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:gravity="start"
+            android:text="3kg of raw material gives 1gram of its extract"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/proceed_Agr_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@id/chkBox_agreement"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:text="proceed to checkout"
+        android:textSize="16sp" />
+
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/chkBox_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/l5"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="I agree to all terms and conditions"
+        android:textSize="17sp"/>
+
+
+</RelativeLayout>

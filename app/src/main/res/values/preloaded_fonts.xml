@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/allerta</item>
+        <item>@font/andika</item>
+        <item>@font/archivo_narrow</item>
+        <item>@font/arvo_bold</item>
+        <item>@font/baumans</item>
+        <item>@font/biryani_bold</item>
+        <item>@font/biryani_semibold</item>
+        <item>@font/candal</item>
+        <item>@font/doppio_one</item>
+        <item>@font/graduate</item>
+        <item>@font/miltonian_tattoo</item>
+        <item>@font/open_sans_light</item>
+        <item>@font/open_sans_semibold</item>
+        <item>@font/playfair_display</item>
+        <item>@font/playfair_display_bold</item>
+        <item>@font/pt_sans_caption_bold</item>
+        <item>@font/skranji_bold</item>
+        <item>@font/ubuntu_medium</item>
+        <item>@font/wendy_one</item>
+    </array>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategoryActivity">
+
+    <TextView
+        android:id="@+id/slogan_Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Choose Product Category"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/ayurvedic_category_ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/ayurvedic_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/slogan_Category" />
+
+    <TextView
+        android:id="@+id/ayurvedic_category_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ayurvedic_category_ImageView"
+        android:text="Ayurvedic Products"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:id="@+id/admin_check_Orders_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/admin_Logout_Btn"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Check New Orders"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/admin_Logout_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>

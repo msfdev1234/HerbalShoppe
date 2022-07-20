@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserOrdersViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/r4_UserOrders"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#996515"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Active Orders"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:layout_below="@+id/r4_UserOrders"
+            android:background="#DAA520"
+            android:id="@+id/User_orders_List_rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/Test_tick"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/tick"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/test_text_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Test_tick"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+
+            android:text="Payment successful"/>
+
+        <TextView
+            android:id="@+id/test_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_text_order"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="Your order placed successfully"/>
+
+        <Button
+            android:id="@+id/Btn_Ok_Order_dialogue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttons"
+            android:layout_below="@id/test_2"
+            android:text="Ok"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
